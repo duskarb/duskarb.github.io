@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Nextis Calendar</title>
+  <meta name="title-en" content="Privacy Policy — Nextis Calendar">
+  <meta name="title-ko" content="개인정보처리방침 — Nextis Calendar">
+  <link rel="icon" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="logo.svg" alt="">Nextis Calendar</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" value="ko">한국어</button>
+        <button type="button" value="en">English</button>
+      </div>
+    </header>
+
+    <!-- English -->
+    <main data-lang="en">
+      <h1>Privacy Policy</h1>
+      <p>Effective date: October 19, 2026</p>
+      <p>This policy explains what data the Nextis Calendar Chrome extension (listed in the Chrome Web Store as “Nextis”, “the extension”) accesses, how it is used, and how you can delete it.</p>
+
+      <p class="note"><b>Summary:</b> The extension reads your calendar events only to show your next event on your new tab and the Google homepage. Everything is stored in your own browser. The developer does not run a server and never receives your data.</p>
+
+      <h2>1. Data the extension accesses</h2>
+      <h3>Google Calendar (only if you connect it)</h3>
+      <ul>
+        <li>Permission requested: <code>https://www.googleapis.com/auth/calendar.readonly</code> (read-only).</li>
+        <li>Data read: your calendar list (calendar ID and color) and, for the next 14 days, each event's title, start and end time, location, Google Meet link, event link, status, and your own response status (to skip declined events).</li>
+        <li>An access token is managed by Chrome's built-in identity system (<code>chrome.identity</code>).</li>
+      </ul>
+      <h3>Apple iCloud Calendar (only if you connect it)</h3>
+      <ul>
+        <li>Your Apple ID email and an app-specific password that you create and enter yourself.</li>
+        <li>Data read: your iCloud calendars and, for the next 14 days, each event's title, time, location, URL/description (only to find a meeting link), and calendar color.</li>
+      </ul>
+      <h3>New tab shortcuts</h3>
+      <ul>
+        <li>Your most visited sites (<code>topSites</code>) and their icons, used as default shortcuts, and any shortcuts you add or edit.</li>
+      </ul>
+
+      <h2>2. How the data is used</h2>
+      <p>The data is used <b>only</b> to show your next calendar event and your shortcuts on the new tab page and the Google homepage. It is not used for advertising, analytics, profiling, or any other purpose. The extension never creates, edits, or deletes calendar events.</p>
+
+      <h2>3. Where the data is stored</h2>
+      <ul>
+        <li>All data is stored locally in your browser's extension storage (<code>chrome.storage</code>) on your device.</li>
+        <li>The Apple app-specific password is stored in that local extension storage so the extension can keep checking iCloud. It is protected by your device and browser profile, not by additional encryption.</li>
+        <li>The developer has no server. Calendar requests go directly from your browser to Google (<code>googleapis.com</code>) and Apple (<code>icloud.com</code>) over HTTPS.</li>
+      </ul>
+
+      <h2>4. Sharing</h2>
+      <p>The extension does not sell, rent, or share your data with anyone. No data is sent to the developer or any third party other than the Google and Apple services you choose to connect.</p>
+
+      <h2>5. Google API Services User Data Policy</h2>
+      <p>Nextis Calendar's use and transfer of information received from Google APIs to any other app will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+      <h2>6. Retention and deletion</h2>
+      <ul>
+        <li><b>Disconnect</b> Google or Apple in the extension popup to delete that service's cached events and, for Apple, the stored password. Disconnecting Google also revokes the access token.</li>
+        <li><b>Uninstall</b> the extension to delete all of its data from your browser.</li>
+        <li>You can also revoke Google access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> and delete the Apple app-specific password at <a href="https://account.apple.com/account/manage">account.apple.com</a>.</li>
+        <li>Cached events are refreshed regularly and only cover the next 14 days.</li>
+      </ul>
+
+      <h2>7. Children</h2>
+      <p>The extension is not directed to children under 13 and does not knowingly collect their data.</p>
+
+      <h2>8. Changes</h2>
+      <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+      <h2>9. Contact</h2>
+      <p>Questions or requests: <a href="mailto:prism011312@gmail.com">prism011312@gmail.com</a></p>
+    </main>
+
+    <!-- 한국어 -->
+    <main data-lang="ko">
+      <h1>개인정보처리방침</h1>
+      <p>시행일: 2026년 10월 19일</p>
+      <p>이 방침은 Nextis Calendar 크롬 확장 프로그램(크롬 웹 스토어 이름 “Nextis”, 이하 “확장 프로그램”)이 어떤 데이터에 접근하고, 어떻게 사용하며, 어떻게 삭제할 수 있는지 설명합니다.</p>
+
+      <p class="note"><b>요약:</b> 확장 프로그램은 새 탭과 구글 첫 화면에 다음 일정을 보여주기 위해서만 캘린더 일정을 읽습니다. 모든 데이터는 사용자의 브라우저 안에 저장됩니다. 개발자는 서버를 운영하지 않으며 사용자의 데이터를 받지 않습니다.</p>
+
+      <h2>1. 접근하는 데이터</h2>
+      <h3>Google 캘린더 (연결한 경우에만)</h3>
+      <ul>
+        <li>요청 권한: <code>https://www.googleapis.com/auth/calendar.readonly</code> (읽기 전용)</li>
+        <li>읽는 데이터: 캘린더 목록(캘린더 ID와 색상), 그리고 앞으로 14일 동안의 일정별 제목, 시작·종료 시간, 장소, Google Meet 링크, 일정 링크, 상태, 본인의 참석 응답(거절한 일정을 빼기 위해)</li>
+        <li>접근 토큰은 크롬에 내장된 계정 기능(<code>chrome.identity</code>)이 관리합니다.</li>
+      </ul>
+      <h3>Apple iCloud 캘린더 (연결한 경우에만)</h3>
+      <ul>
+        <li>사용자가 직접 만들어 입력한 Apple ID 이메일과 앱 전용 암호</li>
+        <li>읽는 데이터: iCloud 캘린더 목록, 그리고 앞으로 14일 동안의 일정별 제목, 시간, 장소, URL·설명(회의 링크를 찾기 위해서만), 캘린더 색상</li>
+      </ul>
+      <h3>새 탭 바로가기</h3>
+      <ul>
+        <li>기본 바로가기로 쓰는 자주 방문한 사이트(<code>topSites</code>)와 그 아이콘, 그리고 사용자가 추가·수정한 바로가기</li>
+      </ul>
+
+      <h2>2. 데이터 사용 목적</h2>
+      <p>데이터는 새 탭과 구글 첫 화면에 다음 일정과 바로가기를 보여주는 데<b>만</b> 사용됩니다. 광고, 분석, 프로파일링 등 다른 목적으로는 사용하지 않습니다. 확장 프로그램은 캘린더 일정을 만들거나 고치거나 지우지 않습니다.</p>
+
+      <h2>3. 저장 위치</h2>
+      <ul>
+        <li>모든 데이터는 사용자 기기의 브라우저 확장 프로그램 저장소(<code>chrome.storage</code>)에만 저장됩니다.</li>
+        <li>Apple 앱 전용 암호는 iCloud를 계속 확인하기 위해 이 저장소에 보관됩니다. 기기와 브라우저 프로필의 보호를 받으며, 별도로 추가 암호화하지는 않습니다.</li>
+        <li>개발자는 서버를 운영하지 않습니다. 캘린더 요청은 사용자 브라우저에서 Google(<code>googleapis.com</code>)과 Apple(<code>icloud.com</code>)로 HTTPS를 통해 직접 전송됩니다.</li>
+      </ul>
+
+      <h2>4. 제3자 제공</h2>
+      <p>확장 프로그램은 사용자의 데이터를 판매·대여·공유하지 않습니다. 사용자가 직접 연결한 Google, Apple 서비스 외에는 개발자를 포함한 누구에게도 데이터를 보내지 않습니다.</p>
+
+      <h2>5. Google API 서비스 사용자 데이터 정책</h2>
+      <p>Nextis Calendar가 Google API로부터 받은 정보를 사용하고 다른 앱으로 전송하는 것은 제한적 사용(Limited Use) 요구사항을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 준수합니다.</p>
+
+      <h2>6. 보관 기간과 삭제</h2>
+      <ul>
+        <li>확장 프로그램 팝업에서 Google 또는 Apple <b>연결 해제</b>를 누르면 해당 서비스의 저장된 일정과(Apple의 경우) 저장된 암호가 삭제됩니다. Google 연결 해제 시 접근 토큰도 폐기됩니다.</li>
+        <li>확장 프로그램을 <b>삭제</b>하면 브라우저에 저장된 모든 데이터가 지워집니다.</li>
+        <li><a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>에서 Google 접근 권한을, <a href="https://account.apple.com/account/manage">account.apple.com</a>에서 Apple 앱 전용 암호를 직접 폐기할 수도 있습니다.</li>
+        <li>저장된 일정은 주기적으로 갱신되며 앞으로 14일치만 보관합니다.</li>
+      </ul>
+
+      <h2>7. 아동</h2>
+      <p>확장 프로그램은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 데이터를 알면서 수집하지 않습니다.</p>
+
+      <h2>8. 변경</h2>
+      <p>방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다.</p>
+
+      <h2>9. 문의</h2>
+      <p>문의 및 요청: <a href="mailto:prism011312@gmail.com">prism011312@gmail.com</a></p>
+    </main>
+
+    <footer>
+      <a href="./">Nextis Calendar</a>
+    </footer>
+  </div>
+  <script src="lang.js"></script>
+</body>
+</html>

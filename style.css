@@ -1,0 +1,128 @@
+:root {
+  --fg: #1f1f1f;
+  --muted: #5f6368;
+  --bg: #ffffff;
+  --card: #f6f8fc;
+  --line: #e3e6ea;
+  --accent: #1a73e8;
+  --dot: #4c8df6;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fg: #e8eaed;
+    --muted: #9aa0a6;
+    --bg: #17181b;
+    --card: #202124;
+    --line: #34363a;
+    --accent: #8ab4f8;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.65 "Google Sans", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  word-break: keep-all;
+}
+
+a { color: var(--accent); }
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 0;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 500;
+}
+.brand img { width: 28px; height: 28px; }
+
+.lang {
+  display: flex;
+  gap: 4px;
+}
+.lang button {
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+.lang button[aria-pressed="true"] { color: var(--fg); border-color: var(--fg); }
+
+/* JS가 없으면 두 언어 모두 보이고, 있으면 고른 언어만 보인다 */
+html.js [data-lang]:not(.active) { display: none; }
+
+.hero { padding: 48px 0 32px; }
+.hero h1 { margin: 0 0 8px; font-size: 40px; font-weight: 500; line-height: 1.2; }
+.hero p { margin: 0; font-size: 18px; color: var(--muted); }
+
+.demo {
+  margin: 32px 0 8px;
+  padding: 40px 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--card);
+  text-align: center;
+}
+.demo .label { color: #e8336d; font-size: 14px; font-weight: 500; }
+.demo .title { font-size: 32px; line-height: 1.25; margin: 4px 0; }
+.demo .meta { color: var(--muted); font-size: 14px; }
+
+h2 { margin: 40px 0 12px; font-size: 22px; font-weight: 500; }
+h3 { margin: 24px 0 8px; font-size: 17px; font-weight: 500; }
+ul { padding-left: 20px; }
+li { margin: 4px 0; }
+
+.cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.note {
+  padding: 12px 16px;
+  border-left: 3px solid var(--accent);
+  background: var(--card);
+  border-radius: 0 8px 8px 0;
+}
+
+footer {
+  margin: 56px 0 0;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+}
+footer a { color: inherit; }
+
+@media (max-width: 600px) {
+  .hero h1 { font-size: 30px; }
+  .demo .title { font-size: 24px; }
+}

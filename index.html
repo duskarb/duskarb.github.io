@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nextis Calendar</title>
+  <meta name="title-en" content="Nextis Calendar — your next event on every new tab">
+  <meta name="title-ko" content="Nextis Calendar — 새 탭마다 다음 일정">
+  <meta name="description" content="Nextis Calendar is a Chrome extension that shows your next Google or Apple (iCloud) Calendar event in place of the Google logo.">
+  <link rel="icon" href="logo.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="logo.svg" alt="">Nextis Calendar</a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" value="ko">한국어</button>
+        <button type="button" value="en">English</button>
+      </div>
+    </header>
+
+    <!-- English -->
+    <main data-lang="en">
+      <section class="hero">
+        <h1>See your next event first.</h1>
+        <p>Nextis Calendar is a Chrome extension (listed as “Nextis”) that shows your next Google Calendar or Apple (iCloud) Calendar event where the Google logo normally sits — on every new tab and on the Google homepage.</p>
+        <a class="cta" href="https://chromewebstore.google.com/detail/dpgkimcmhbiepaklcbhblolommffabkh">Add to Chrome</a>
+      </section>
+
+      <div class="demo" aria-hidden="true">
+        <div class="label">Today · in 42 min</div>
+        <div class="title">Design review</div>
+        <div class="meta">3:00 – 4:00 PM · Room 1</div>
+      </div>
+
+      <h2>What it does</h2>
+      <ul>
+        <li>Shows one thing: your next event, with the time remaining (“Today · in 42 min”, “● Now · 25 min left”).</li>
+        <li>Works with Google Calendar, Apple (iCloud) Calendar, or both. With both connected, events are merged and the closest one is shown.</li>
+        <li>“Join meeting” button for Google Meet, Zoom, Teams, and FaceTime links.</li>
+        <li>New tab page with Google search and editable shortcuts.</li>
+        <li>Korean and English, light and dark mode.</li>
+      </ul>
+
+      <h2>How Nextis Calendar uses your Google data</h2>
+      <p>When you click <b>Connect</b> for Google Calendar, Nextis Calendar asks for one permission: <b>read-only access to your Google Calendar</b> (<code>calendar.readonly</code>). It uses it only to read the title, time, location, meeting link, and calendar color of your upcoming events so it can show the next one on your new tab.</p>
+      <ul>
+        <li>It never creates, edits, or deletes events.</li>
+        <li>Event data stays in your browser. It is not sent to the developer or anyone else.</li>
+        <li>You can disconnect at any time from the extension popup.</li>
+      </ul>
+      <p>Details are in the <a href="privacy.html?lang=en">Privacy Policy</a>.</p>
+
+      <h2>Connecting Apple Calendar</h2>
+      <p>Create an app-specific password at <a href="https://account.apple.com/account/manage">account.apple.com</a> → Sign-In and Security → App-Specific Passwords, then enter it with your Apple ID email in the Nextis popup. It is used only to read events from iCloud.</p>
+    </main>
+
+    <!-- 한국어 -->
+    <main data-lang="ko">
+      <section class="hero">
+        <h1>다음 일정을 가장 먼저.</h1>
+        <p>Nextis Calendar는 새 탭과 구글 첫 화면의 로고 자리에 Google 캘린더 또는 Apple(iCloud) 캘린더의 다음 일정을 보여주는 크롬 확장 프로그램입니다. (웹 스토어 이름: “Nextis”)</p>
+        <a class="cta" href="https://chromewebstore.google.com/detail/dpgkimcmhbiepaklcbhblolommffabkh">Chrome에 추가</a>
+      </section>
+
+      <div class="demo" aria-hidden="true">
+        <div class="label">오늘 · 42분 후</div>
+        <div class="title">디자인 리뷰 미팅</div>
+        <div class="meta">오후 3:00 – 오후 4:00 · 1번 회의실</div>
+      </div>
+
+      <h2>기능</h2>
+      <ul>
+        <li>다음 일정 하나만, 남은 시간과 함께 보여줍니다 (“오늘 · 42분 후”, “● 진행 중 · 25분 남음”).</li>
+        <li>Google 캘린더, Apple(iCloud) 캘린더 중 하나만 또는 둘 다 연결할 수 있습니다. 둘 다 연결하면 일정을 합쳐서 가장 가까운 일정을 보여줍니다.</li>
+        <li>Google Meet, Zoom, Teams, FaceTime 링크가 있으면 “회의 참여” 버튼이 나옵니다.</li>
+        <li>새 탭에 Google 검색창과 편집 가능한 바로가기가 있습니다.</li>
+        <li>한국어와 영어, 라이트·다크 모드를 지원합니다.</li>
+      </ul>
+
+      <h2>Google 데이터를 사용하는 방법</h2>
+      <p>Google 캘린더 <b>연결</b>을 누르면 Nextis Calendar는 <b>Google 캘린더 읽기 전용 권한</b>(<code>calendar.readonly</code>) 하나만 요청합니다. 이 권한으로 다가오는 일정의 제목, 시간, 장소, 회의 링크, 캘린더 색상만 읽어서 새 탭에 다음 일정을 보여줍니다.</p>
+      <ul>
+        <li>일정을 만들거나 고치거나 지우지 않습니다.</li>
+        <li>일정 데이터는 브라우저 안에만 있고, 개발자나 다른 누구에게도 보내지 않습니다.</li>
+        <li>확장 프로그램 팝업에서 언제든 연결을 해제할 수 있습니다.</li>
+      </ul>
+      <p>자세한 내용은 <a href="privacy.html?lang=ko">개인정보처리방침</a>을 보세요.</p>
+
+      <h2>Apple 캘린더 연결</h2>
+      <p><a href="https://account.apple.com/account/manage">account.apple.com</a> → 로그인 및 보안 → 앱 전용 암호에서 암호를 만든 뒤, Nextis 팝업에 Apple ID 이메일과 함께 입력하세요. 이 암호는 iCloud에서 일정을 읽는 데만 쓰입니다.</p>
+    </main>
+
+    <footer>
+      <span data-lang="en">© 2026 Nextis Calendar · <a href="privacy.html?lang=en">Privacy Policy</a> · Contact: <a href="mailto:prism011312@gmail.com">prism011312@gmail.com</a></span>
+      <span data-lang="ko">© 2026 Nextis Calendar · <a href="privacy.html?lang=ko">개인정보처리방침</a> · 문의: <a href="mailto:prism011312@gmail.com">prism011312@gmail.com</a></span>
+    </footer>
+  </div>
+  <script src="lang.js"></script>
+</body>
+</html>
